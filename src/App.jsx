@@ -1326,7 +1326,8 @@ function PDFDownloadButton({text,filename}){
     .replace(/–|—/g,"-")
     .replace(/[•●◦]/g,"*")
     .replace(/[^	
- -~]/g,"");
+
+ -~]/g,"");
 
   const downloadPDF=async()=>{
     if(!text){setErr("No resume text found.");return;}
