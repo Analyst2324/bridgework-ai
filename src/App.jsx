@@ -1724,7 +1724,8 @@ function PDFDownloadButton({text,filename}){
     setStatus("loading");setMsg("word");
     try{
       const san=(s)=>(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/[━─═]/g,"-").replace(/[""]/g,'"').replace(/[‘’]/g,"'").replace(/[^	
- -퟿-�]/g,"");
+
+ -퟿-�]/g,"");
 
       const HDRS=["PROFESSIONAL SUMMARY","CORE COMPETENCIES","KEY COMPETENCIES","PROFESSIONAL EXPERIENCE","WORK EXPERIENCE","EMPLOYMENT","EARLY CAREER","EDUCATION & CERTIFICATIONS","EDUCATION AND CERTIFICATIONS","EDUCATION","CERTIFICATIONS","TECHNICAL SKILLS","SKILLS","SYSTEMS & TOOLS","SYSTEMS AND TOOLS","ACHIEVEMENTS","AWARDS","REFERENCES","ADDITIONAL","LANGUAGES","VOLUNTEER","PROJECTS","TITLE TRANSLATIONS","KEY UPGRADES"];
       const DTRE=/((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{4}\s*[-–—]+\s*(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?\s+\d{4}|Present))\s*$/i;
